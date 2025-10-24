@@ -48,7 +48,6 @@ final readonly class Writer
     {
         $xmlTestsuites = $this->document->createElement('testsuites');
         $xmlTestsuites->appendChild($this->createSuiteNode($testSuite));
-        $xmlTestsuites->setAttribute('name', self::TESTSUITES_NAME);
         $this->document->appendChild($xmlTestsuites);
 
         $xml = $this->document->saveXML();
